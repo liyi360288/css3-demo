@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            position: relative;
+            width: 439px;
+            height: 314px;
+            border: 5px solid #fff;
+            text-align: center;
+            overflow: hidden;
+        }
+        img{
+            opacity: .5;
+            transition: all .3s;
+        }
+        .box:hover img{
+            opacity: 1;
+            transform-origin: top;
+            transform: scale(.95,.95);
+        }
+        .box:hover h2{
+            transform: translate(0,20px);
+            
+        }
+        h2{
+            transition: all 1s;
+            position: absolute;
+            top: 45%;
+            text-transform: uppercase;
+            margin-left: 30%;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="images/2.jpg" alt="">
+        <h2 style="color:#fff">HolySADIE</h2>
+    </div>
+</body>
+</html>
