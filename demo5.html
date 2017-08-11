@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            position: relative;
+            width: 439px;
+            height: 314px;
+            background: #fff;
+            overflow: hidden;
+        }
+        .txt_box{
+            position: absolute;
+            width: 18em;
+            top: 35%;           
+            left: 15%;
+            color: #fff;
+            margin: auto;
+            text-align: center;
+        }
+        .hengxian{
+            position: absolute;
+            top: 30%;
+            left: 15%;
+            width: 60%;
+            height: 1px;
+            background: #fff;
+            transform: scale(0,1);           
+            transition: all 1s;
+        }
+        .shuxian{
+            width: 1px;
+            height: 150px;
+            position: absolute;
+            top: 30%;
+            left: 15%;
+            background: #fff;
+            transform: scale(1,0);
+            transition: all 1s
+        }
+        .shuxian::after{
+            content: "";
+            position: absolute;
+            left: 263.4px;
+            width: 1px;
+            height: 150px;
+            background: #fff;
+        }
+        .hengxian::after{
+            content: "";
+            position: absolute;
+            display: block;
+            top: 150px;
+            width: 100%;
+            height: 1px;
+            background: #fff;           
+        }
+        .box:hover .hengxian,.box:hover .shuxian{
+            transform: scale(1,1);            
+        }
+        .box:hover h2{
+            transform: translate(0,10px);
+        }
+        .box:hover p{
+            transform: translate(0,-10px);
+        }
+        h2,p{
+            transition: all 1s;
+        }      
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="images/5.jpg" alt="">
+        <div class="txt_box">
+            <h2>CREATE</h2>
+            <p>I will meet my creators</p>
+        </div>
+        <div class="hengxian"></div>
+        <div class="shuxian"></div>
+    </div>
+</body>
+</html>
