@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 450px;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            
+        }
+        img{
+            transition: all .3s;
+        }
+        .box:hover img{
+            transform: translate(0,88px);
+        }
+        .box:hover .txt_box{
+            transform: translate(0,88px);
+        }
+        .txt_box{
+            position: absolute;
+            top: -88px;
+            width: 100%;
+            height: 70px;
+            padding: 2% 0;
+            color: #fff;
+            text-align: center;
+            background: gray;
+            transition: all .3s;
+        }
+        h2{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="images/8.jpg" alt="">
+        <div class="txt_box">
+            <h2>heading href</h2>
+            <p>Description goes here</p>
+        </div>
+    </div>
+</body>
+</html>
