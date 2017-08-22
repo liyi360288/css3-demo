@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="swiper-3.4.2.min.css">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 1000px;
+            height: 500px;
+            margin: 10px auto;
+        }
+        .swiper-container{
+            position: relative;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .btn{
+            position: absolute;
+            top: 50%;
+            margin-top: -27px;
+            display: block;
+            width: 30px;
+            height: 54px;
+            background: url(swiper_button_003.png) no-repeat;
+            z-index: 20;
+        }
+        .btn_prev{
+            left: 0;
+            background-position: 0 0;
+        }
+        .btn_next{
+            right: 0;
+            background-position: -84px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                        <img src="images/2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                        <img src="images/3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                        <img src="images/4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                        <img src="images/5.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                        <img src="images/6.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                        <img src="images/7.jpg" alt="">
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- 如果需要导航按钮 -->
+            <a href="javascript:;" class="btn btn_prev"></a>
+            <a href="javascript:;" class="btn btn_next"></a>
+            
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+    </div>
+    <script src="swiper-3.4.2.jquery.min.js"></script>
+    <script src="swiper-3.4.2.min.js"></script>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+            autoplay: 2000,//可选选项，自动滑动
+            pagination : '.swiper-pagination',//分页器
+            prevButton:'.btn_prev',//上一个按钮
+            nextButton:'.btn_next',//下一个按钮
+            scrollbar:'.swiper-scrollbar',//滚动条
+            loop : true,//环路
+        })     
+    </script>
+</body>
+</html>
