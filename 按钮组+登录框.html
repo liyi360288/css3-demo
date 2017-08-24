@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .signin_box{
+            position: fixed;
+            background: #000;
+            width: 100%;
+            height: 100%;
+            display: none; 
+            opacity: .6;
+            z-index: 9999;
+        }
+        .singin_window{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            height: 400px;
+            background: #0ff;
+            margin-left: -200px;
+            margin-top: -200px;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <button class="btn pull-right" id="sigin">登录</button>
+        <div class="signin_box" id="sigon_box">
+            <div class="singin_window">
+                <form action="" class="form-horizontal">
+                    <h1 class="text-center">用户登录框</h1>
+                    <div class="form-group">
+                        <label for="text" class="col-sm-3 control-label">用户名</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="text" placeholder="请输入用户名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-sm-3 control-label" >密码</label>
+                        <div class="col-sm-6">
+                            <input type="password" class="form-control" id="password" placeholder="请输入密码">    
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn col-sm-6 col-sm-offset-3">登录</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button class="btn">按钮</button>
+            <button class="btn">按钮</button>
+            <button class="btn">按钮</button>
+            <button class="btn">按钮</button>
+            <button class="btn">按钮</button>
+            <button class="btn">按钮</button>
+            <div class="btn-group">
+                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                    更多
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="">百度</a>
+                    </li>
+                    <li>
+                        <a href="">百度</a>
+                    </li>
+                    <li>
+                        <a href="">百度</a>
+                    </li>
+                    <li>
+                        <a href="">百度</a>
+                    </li>
+                    <li>
+                        <a href="">百度</a>
+                    </li>
+                    <li>
+                        <a href="">百度</a>
+                    </li>
+                </ul>
+            </div>
+            
+
+        </div>
+    </div>
+    <script>
+        var oSign=document.getElementById("sigin");
+        var oSignBox=document.getElementById("sigon_box");
+        oSign.onclick=function(){
+            //oSignBox.style.width="880px";
+            oSignBox.style.display="block";
+        }
+
+    </script>
+
+
+
+    <script src="js/jquery-3.2.1/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
