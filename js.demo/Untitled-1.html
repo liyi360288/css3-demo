@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="dfd">我是一个段落</p>
+    <input type="button" value="全选" id="quanXian">
+    <input type="button" value="不选" id="buXuan">
+    <input type="button" value="反选" id="fanXuan">
+    <div id="div">
+        
+        <input type="checkbox"><input type="checkbox">
+        <input type="checkbox"><input type="checkbox">
+        <input type="checkbox"><input type="checkbox"><input type="checkbox">
+        <input type="checkbox"><input type="checkbox">
+        <input type="checkbox"><input type="checkbox">
+        <input type="checkbox"><input type="checkbox">
+        <input type="checkbox"><input type="checkbox">
+        <input type="checkbox"><input type="checkbox">
+        <input type="checkbox"><input type="checkbox">
+        <input type="checkbox"><input type="checkbox">
+    </div>
+    <script>
+        window.onload=function(){
+            var x=document.getElementById("quanXian");
+            var a=document.getElementById("buXuan");
+            var b=document.getElementById("fanXuan");
+            var div=document.getElementById("div");
+            var fuXuan=div.getElementsByTagName("input");
+            x.onclick=function(){
+                for(var i=0;i<fuXuan.length;i++)
+                {
+                    fuXuan[i].checked=true;
+                }
+            }
+            a.onclick=function(){
+                for(var i=0;i<fuXuan.length;i++)
+                {
+                    fuXuan[i].checked=false;
+                }
+            }
+            b.onclick=function(){
+                for(var i=0;i<fuXuan.length;i++)
+                {
+                    if (fuXuan[i].checked==true) {
+                        fuXuan[i].checked=false;
+                    } else {
+                        fuXuan[i].checked=true;
+                    }
+                }
+            }
+            
+        }
+    </script>
+
+</body>
+</html>

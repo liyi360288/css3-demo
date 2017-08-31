@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background: #f00;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        var oDiv=document.getElementById("box");
+        /* function sun(){
+            if(oDiv.currenStyle){
+                alert(obj.currenStyle.name);
+            }
+            else{
+                alert(getComputedStyle(obj,11).name);
+                
+            }
+        }
+        alert(sun()); */
+        function getStyle(obj,name){
+            if(obj.currenStyle){
+                return obj.currenStyle.name;
+            }
+            else{
+                return getComputedStyle(oDiv,true)[name];
+            }
+        }
+        alert(getStyle(oDiv,'backgroundColor'));
+    </script>
+</body>
+</html>

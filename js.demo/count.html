@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: #f00;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div id="box">
+            <input type="text">
+            <input type="text">
+    </div>
+    
+    <input type="button" value="btn" id="btn">
+    <script>   
+            /* var arr=[23,3,43,34,4]
+            arr.sort(function(n1,n2){
+                return n1-n2;
+            })
+            alert(arr); */
+            //var oDiv=document.getElementById("box");
+            //alert(getComputedStyle(oDiv,faf)["width"]);
+            //alert(getComputedStyle(oDiv,false)["width"]);
+            var oBox=document.getElementById("box");
+            var text=oBox.getElementsByTagName("input");
+            var oBtn=document.getElementById("btn");
+            /* oBtn.onclick=function(){
+                for(var i=0;i<text.length;i++){
+                    text[i].index=i;
+                }
+                alert(text[i]);
+            } */
+            for(var i=0;i<text.length;i++){
+                text[i].index=i;
+                oBtn.onclick=function(){
+                    for(var i=0;i<text.length;i++){
+                        result+=text[i].value;
+                    }
+                    return result;
+                }
+            }
+    </script>
+</body>
+</html>

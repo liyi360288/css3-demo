@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        li{
+            float: left;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            border: 1px solid #f00;
+            list-style: none;
+        }
+        .bg{
+            background: green;
+        }
+        ul{
+            width: 310px;
+
+        }
+        div{
+            clear: both;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <ul >
+        <li class="bg">1月</li>
+        <li>2月</li>
+        <li>3月</li>
+        <li>4月</li>
+        <li>5月</li>
+        <li>6月</li>
+        <li>7月</li>
+        <li>8月</li>
+        <li>9月</li>
+        <li>10月</li>
+        <li>11月</li>
+        <li>12月</li>
+    </ul>
+    <div>
+        <h1>1月活动</h1>
+        <p>床前明月光。于是地上霜。</p>
+    </div>
+    <script>
+        window.onload=function(){
+            var oDiv=document.getElementsByTagName("div");
+            var oLi=document.getElementsByTagName("li");
+            var huoDong=['床前明月光。于是地上霜。',
+            "2月法法师发发是发",
+            "3yuefasdfasdfak  sadf n ",
+            "4月法法师发发是发",
+            "5yuefasdfasdfak  sadf ",
+            "6月法法师发发是发",
+            "7yuefasdfasdfak  sad",
+            "8月法法师发发是发",
+            "9yuefasdfasdfak  sa",
+            "10月法法师发发是发",
+            "11yuefasdfasdfak  s",
+            "12yuefasdfasdfak ",
+            ]
+            for(var i=0;i<oLi.length;i++)
+            {
+                oLi[i].index=i;
+                oLi[i].onmouseover=function(){
+                    for(var i=0;i<oLi.length;i++){
+                        oLi[i].className="";
+                    }
+                    this.className="bg";
+                    oDiv[0].innerHTML='<h1>'+(this.index+1)+'月活动</h1><p>'+huoDong[this.index]+'</p>';
+                }               
+            }
+            
+
+
+        }
+    
+    
+    </script>
+</body>
+</html>

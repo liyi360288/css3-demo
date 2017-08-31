@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .bg{
+            background: green;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            background: #f00;
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var oBtn=document.getElementsByTagName("input");
+            var oDiv=document.getElementsByTagName("div");
+            for(var i=0;i<oBtn.length;i++){
+                oBtn[i].onclick=function(){
+                    for(var i=0;i<oBtn.length;i++)
+                    {
+                        oBtn[i].className='';
+                        oBtn[i].index=i;
+                        oDiv[i].className="";
+                    }
+                    this.className="bg";
+                    oDiv[this.index].className="show";
+                }
+            }
+            
+            
+
+
+        }
+    
+    </script>
+</head>
+<body>
+    <input type="button" value="按钮1">
+    <input type="button" value="按钮1">
+    <input type="button" value="按钮1">
+    <input type="button" value="按钮1">
+    <div class="show">111</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+</body>
+</html>
