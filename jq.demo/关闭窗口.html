@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script> 
+    <title>Document</title>
+    <style>
+        div{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background: #f00;
+        }
+        span{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 17px;
+            background: #00f;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="div"><span id="span">x</span></div>
+    <script>
+         $('span').dblclick(function(){
+            $('div').hide(1000);
+        }); 
+        /* var a=document.getElementById('div');
+        var b=document.getElementById('span');
+        b.onclick=function(){
+            a.style.display='none';
+        }; */
+    </script>
+</body>
+</html>

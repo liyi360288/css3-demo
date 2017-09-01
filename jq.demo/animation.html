@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script> 
+    <title>Document</title>
     <style>
         div{
-            width:200px;
-            height: 200px;
-            background: #f00;
-            display: none;
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background: #0f0;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
-    <div></div>
-    <button>hide</button>
+    <div>
+        jQuery
+    </div>
+    <button>动画</button>
+
     <script>
         $('button').click(function(){
-            $('div').toggle();
+            $('div').animate({
+                left:'+=30px',
+                width:'+=50px',
+                height:'+=50px',
+                fontSize:'150px',
+            });
+
+
         });
-
-
     </script>
-
 </body>
 </html>

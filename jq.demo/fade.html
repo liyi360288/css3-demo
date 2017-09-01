@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script> 
+    <title>Document</title>
     <style>
         div{
-            width:200px;
+            width: 200px;
             height: 200px;
             background: #f00;
-            display: none;
+        }
+        button{
+            padding: 6px 12px;
         }
     </style>
 </head>
 <body>
     <div></div>
-    <button>hide</button>
+    <button>fade</button>
     <script>
+        /* $('button').click(function(){
+            $('div').fadeIn(1000);
+        }); */
+        /* $('button').click(function(){
+            $('div').fadeOut(1000);
+        }); */
+        /* $('button').click(function(){
+            $('div').fadeToggle(1000);
+        }); */
         $('button').click(function(){
-            $('div').toggle();
-        });
-
-
+            $('div').fadeTo(1000,.6);});
     </script>
-
 </body>
 </html>

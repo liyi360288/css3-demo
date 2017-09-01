@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 759px;
+}
+header{
+    position: relative;
+    background: #4f5980;
+    font-size: 0;
+    opacity: .95;
+}
+.top_logo{
+    display: inline-block;
+    width: 270px;
+    height: 66px;
+    background: url(../images/icon.png) no-repeat 0 0;
+    margin: 24px 0 14px 48px;
+}
+.btn{
+    position: absolute;
+    right: 39px;
+    top: 26px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: #515b82;
+    width: 73px;
+    height: 55px;
+}
+.btn .icon{
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    margin-top: -1.5px;
+    display: inline-block;
+    width: 36px;
+    height: 3px;
+    background: #fff;
+
+}
+.btn .icon::after,.btn .icon::before{
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #fff;
+}
+.btn .icon::after{
+    bottom: 10px;
+}
+.btn .icon::before{
+    top: 10px;
+}
+.download_box{
+    background: url(../images/background.png) no-repeat;
+    height: 1649px;
+    text-align: center;
+    color: #fff;
+}
+.download_box .p_lead{
+    font-size: 48px;
+    font-weight: bold;
+    padding-top: 82px;
+    padding-bottom: 27px; 
+}
+.download_box>p{
+    font-size: 42px;
+    line-height: 60px;
+    font-weight: 300;
+}
+.erweima{
+    margin-top: 33px;
+}
+.erweima img{
+    padding: 12px;
+    background: #fff;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.erweima p{
+    margin-top: 8px;
+    margin-bottom: 46px;
+    font-size: 20px;
+}
+.btn_download{
+    display: block;
+    margin: 0 auto;
+    width: 460px;
+    height: 87px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    font-size: 36px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 87px;
+    margin-bottom: 46px;
+}
+.btn_download .icon{
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 62px;
+    top: 13px;
+}
+.ios_icon{
+    background: url(../images/icon.png) no-repeat 0 -85px;
+}
+.andorid_icon{
+    background: url(../images/icon.png) no-repeat 0 -200px;
+}
+.btn_download .text{
+    position: relative;
+    top: -6px;
+}
+.ip_iocn{
+    position: absolute;
+    top: 1044px;
+    width: 759px;
+    height: 1200px;
+    z-index: 100;
+    background: url(../images/ip_iocn.png) no-repeat;
+}
+.zhiNengDuiXiang_box{
+    text-align: center;
+    border-bottom: 1px solid #dcdcdc;
+}
+.img_box{
+    margin: 0 auto 76px;
+    width: 526px;
+    height: 445px;
+    background: url(../images/zhiNengDuiXiang.png);
+}
+.margin_top_703px{
+    margin-top: 703px;
+}
+.text_box{
+    font-size: 24px;
+    line-height: 36px;
+    color: #707070;
+}
+.text_box .header{
+    font-size: 46px;
+    line-height: 60px;
+    color: #444550;
+}
+.margin_bottom_29px{
+    margin-bottom: 29px;
+}
+.margin_bottom_126px{
+    margin-bottom: 126px;
+}

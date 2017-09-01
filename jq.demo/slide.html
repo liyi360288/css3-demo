@@ -16,14 +16,21 @@
     </style>
 </head>
 <body>
+    <button>slideDown</button>
+    <button>slideUp</button>
+    <button>slideToggle</button>
     <div></div>
-    <button>hide</button>
+    
     <script>
-        $('button').click(function(){
-            $('div').toggle();
+        $('button:first').click(function(){
+            $('div').slideDown();
         });
-
-
+        $('button').next().click(function(){
+            $('div').slideUp();
+        });
+        $('button:last').click(function(){
+            $('div').slideToggle();
+        });
     </script>
 
 </body>

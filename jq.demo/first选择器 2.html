@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script> 
     <title>Document</title>
 </head>
 <body>
@@ -21,10 +22,10 @@
         <p>我是段落</p> 
     </div>
     
-
-     <script src="jquery-3.2.1.min.js"></script> 
     <script>
-        $("p:last").css('backgroundColor' , 'red');
+        $('p').click(function(){
+            $(this).hide();
+        });
     </script>
 </body>
 </html>
