@@ -129,9 +129,10 @@ header{
 }
 .img_box{
     margin: 0 auto 76px;
-    width: 526px;
+}
+.photo_1{
+    background: url(../images/zhiNengDuiXiang.png) no-repeat center;
     height: 445px;
-    background: url(../images/zhiNengDuiXiang.png);
 }
 .margin_top_703px{
     margin-top: 703px;
@@ -141,14 +142,134 @@ header{
     line-height: 36px;
     color: #707070;
 }
-.text_box .header{
+.text_box .header,.text_box .title{
     font-size: 46px;
     line-height: 60px;
     color: #444550;
 }
+.text_box .header{
+    font-weight: bolder;
+}
+.text_box .title{
+    font-weight: 400;
+}
 .margin_bottom_29px{
     margin-bottom: 29px;
 }
+.photo_2{
+    background: url(../images/zhiNengDuiXiang2.png) no-repeat center;
+    height: 316px;
+    margin-top: 87px;
+}
 .margin_bottom_126px{
     margin-bottom: 126px;
+}
+.photo_3{
+    margin-top: 103px;
+    background: url(../images/zhiNengDuiXiang3.png) no-repeat center;
+    height: 540px;
+}
+.photo_4{
+    margin-top: 68px;
+    background: url(../images/zhiNengDuiXiang4.png) no-repeat center;
+    height: 403px;
+}
+.cooperator_item{
+    display: inline-block;
+    height: 74px;
+}
+.cooperator_bg1{
+    width: 200px;
+    background: url(../images/icon.png) no-repeat 0 -300px;
+}
+.cooperator_bg2{
+    width: 175px;
+    background: url(../images/icon.png) no-repeat 0 -446px;
+}
+.cooperator_bg3{
+    width: 175px;
+    background: url(../images/icon.png) no-repeat 0 -585px;
+}
+.bottom_box{
+    text-align: center;
+    height: 363px;
+    background: url(../images/bg_bottom.jpg) no-repeat center;
+    color: #fff;
+}
+.bottom_box>p{
+    font-size: 36px;
+    letter-spacing: 26px;
+    line-height: 1;
+    padding: 50px 0 20px;
+}
+.download_bottom_box{
+    position: relative;
+    height: 180px;
+    margin: 0 17px 0 27px;
+    border-radius: 8px;
+    background: gray;
+    opacity: .8;
+}
+.btn_grounp{
+    padding: 25px 0 0 59px;
+}
+.btn_bottom_download{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 49px;
+    width: 256px;
+    height: 49px;
+    border: 1px solid #fff;
+    border-radius: 200px;
+    margin-bottom: 20px;
+}
+.btn_bottom_download .icon{
+    position: relative;
+    top: 7px;
+    display: inline-block;
+    width: 30px;
+    height: 36px;
+}
+.btn_bottom_download .ios_icon{
+    background: url(../images/xl_icon.png) no-repeat 0 -10px;
+}
+.btn_bottom_download .andorid_icon{
+    background: url(../images/xl_icon.png) no-repeat 0 -67px;
+}
+.btn_bottom_download .text{
+    position: relative;
+    top: -3px;
+}
+.bottom_erweima{
+    position: absolute;
+    top: 17px;
+    right: 55px;
+    font-size: 0;
+}
+.erweima_img{
+    display: inline-block;
+    padding: 9px;
+    border-radius: 8px;
+    background: #fff;
+    margin-right: 16px;
+}
+.erweima_img img{
+    width: 126px;
+    height: 126px;
+    display: block;
+}
+.bottom_erweima>p{
+    display: inline-block;
+    width: 1em;
+    font-size: 12px;
+    line-height: 1.15;
+    position: relative;
+    top: -9px;
+}
+.bottom_erweima>p>span{
+    display: block;
+    width: 1em;
+    height: 1em;
 }
