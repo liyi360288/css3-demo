@@ -1,41 +1,40 @@
+
 *{
     margin: 0;
     padding: 0;
 }
 .container{
-    width: 759px;
+    width: 760px;
 }
 header{
-    position: relative;
-    background: #4f5980;
+    background: rgba(255,255,255,.05);
     font-size: 0;
-    opacity: .95;
 }
 .top_logo{
     display: inline-block;
-    width: 270px;
-    height: 66px;
+    width: 100%;
+    height: 1.222222rem;
     background: url(../images/icon.png) no-repeat 0 0;
-    margin: 24px 0 14px 48px;
+    margin: 0.444444rem 0 0.259259rem 0.888889rem;
 }
 .btn{
     position: absolute;
-    right: 39px;
-    top: 26px;
+    right: 0.722222rem;
+    top: 0.481481rem;
     border: 1px solid #fff;
-    border-radius: 10px;
-    background: #515b82;
-    width: 73px;
-    height: 55px;
+    border-radius: 0.185185rem;
+    background-color: transparent;
+    width: 1.351852rem;
+    height: 1.018519rem;
 }
 .btn .icon{
     position: absolute;
     top: 50%;
-    left: 18px;
-    margin-top: -1.5px;
+    left: 0.333333rem;
+    margin-top: -0.027778rem;
     display: inline-block;
-    width: 36px;
-    height: 3px;
+    width: 0.666667rem;
+    height: 0.055556rem;
     background: #fff;
 
 }
@@ -44,66 +43,76 @@ header{
     left: 0;
     content: '';
     width: 100%;
-    height: 3px;
+    height: 0.055556rem;
     background: #fff;
 }
 .btn .icon::after{
-    bottom: 10px;
+    bottom: 0.185185rem;
 }
 .btn .icon::before{
-    top: 10px;
+    top: 0.185185rem;
 }
 .download_box{
-    background: url(../images/background.png) no-repeat;
-    height: 1649px;
+    position: relative;
+    background: url(../images/background.png) no-repeat rgba(0,0,0,.3);
+    height: 29.907407rem;
     text-align: center;
     color: #fff;
 }
+/*.download_box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+}*/
 .download_box .p_lead{
-    font-size: 48px;
+    font-size: 1.246111rem;
     font-weight: bold;
-    padding-top: 82px;
-    padding-bottom: 27px; 
+    padding-top: 1.518519rem;
+    padding-bottom: 0.5rem; 
 }
 .download_box>p{
-    font-size: 42px;
-    line-height: 60px;
+    font-size: 0.830741rem;
+    line-height: 1.111111rem;
     font-weight: 300;
 }
 .erweima{
-    margin-top: 33px;
+    margin-top: 0.611111rem;
 }
 .erweima img{
-    padding: 12px;
+    padding: 0.222222rem;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 0.185185rem;
     display: block;
     margin: 0 auto;
 }
 .erweima p{
-    margin-top: 8px;
-    margin-bottom: 46px;
-    font-size: 20px;
+    margin-top: 0.148148rem;
+    margin-bottom: 0.851852rem;
+    font-size: 0.373889rem;
 }
 .btn_download{
     display: block;
     margin: 0 auto;
-    width: 460px;
-    height: 87px;
+    width: 8.518519rem;
+    height: 1.611111rem;
     border: 3px solid #fff;
-    border-radius: 100px;
-    font-size: 36px;
+    border-radius: 1.851852rem;
+    font-size: 0.66963rem;
     text-decoration: none;
     color: #fff;
-    line-height: 87px;
-    margin-bottom: 46px;
+    line-height: 1.611111rem;
+    margin-bottom: 0.851852rem;
 }
 .btn_download .icon{
     position: relative;
     display: inline-block;
-    width: 54px;
-    height: 62px;
-    top: 13px;
+    width: 1.0rem;
+    height: 1.148148rem;
+    top: 0.240741rem;
 }
 .ios_icon{
     background: url(../images/icon.png) no-repeat 0 -85px;
@@ -113,13 +122,13 @@ header{
 }
 .btn_download .text{
     position: relative;
-    top: -6px;
+    top: -0.111111rem;
 }
 .ip_iocn{
     position: absolute;
-    top: 1044px;
-    width: 759px;
-    height: 1200px;
+    top: 19.333333rem;
+    width: 14.055556rem;
+    height: 22.222222rem;
     z-index: 100;
     background: url(../images/ip_iocn.png) no-repeat;
 }
@@ -128,23 +137,23 @@ header{
     border-bottom: 1px solid #dcdcdc;
 }
 .img_box{
-    margin: 0 auto 76px;
+    margin: 0 auto 1.407407rem;
 }
 .photo_1{
     background: url(../images/zhiNengDuiXiang.png) no-repeat center;
-    height: 445px;
+    height: 8.240741rem;
 }
 .margin_top_703px{
-    margin-top: 703px;
+    margin-top: 13.018519rem;
 }
 .text_box{
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 0.444444rem;
+    line-height: 0.666667rem;
     color: #707070;
 }
 .text_box .header,.text_box .title{
-    font-size: 46px;
-    line-height: 60px;
+    font-size: 0.851852rem;
+    line-height: 1.111111rem;
     color: #444550;
 }
 .text_box .header{
@@ -154,83 +163,82 @@ header{
     font-weight: 400;
 }
 .margin_bottom_29px{
-    margin-bottom: 29px;
+    margin-bottom: 0.537037rem;
 }
 .photo_2{
     background: url(../images/zhiNengDuiXiang2.png) no-repeat center;
-    height: 316px;
-    margin-top: 87px;
+    height: 5.851852rem;
+    margin-top: 1.611111rem;
 }
 .margin_bottom_126px{
-    margin-bottom: 126px;
+    margin-bottom: 2.333333rem;
 }
 .photo_3{
-    margin-top: 103px;
+    margin-top: 1.907407rem;
     background: url(../images/zhiNengDuiXiang3.png) no-repeat center;
-    height: 540px;
+    height: 10.0rem;
 }
 .photo_4{
-    margin-top: 68px;
+    margin-top: 1.259259rem;
     background: url(../images/zhiNengDuiXiang4.png) no-repeat center;
-    height: 403px;
+    height: 7.462963rem;
 }
 .cooperator_item{
     display: inline-block;
-    height: 74px;
+    height: 1.37037rem;
 }
 .cooperator_bg1{
-    width: 200px;
+    width: 3.703704rem;
     background: url(../images/icon.png) no-repeat 0 -300px;
 }
 .cooperator_bg2{
-    width: 175px;
+    width: 3.240741rem;
     background: url(../images/icon.png) no-repeat 0 -446px;
 }
 .cooperator_bg3{
-    width: 175px;
+    width: 3.240741rem;
     background: url(../images/icon.png) no-repeat 0 -585px;
 }
 .bottom_box{
     text-align: center;
-    height: 363px;
+    height: 6.722222rem;
     background: url(../images/bg_bottom.jpg) no-repeat center;
     color: #fff;
 }
 .bottom_box>p{
-    font-size: 36px;
-    letter-spacing: 26px;
+    font-size: 0.648148rem;
+    letter-spacing: 0.481481rem;
     line-height: 1;
-    padding: 50px 0 20px;
+    padding: 0.925926rem 0 0.37037rem;
 }
 .download_bottom_box{
     position: relative;
-    height: 180px;
-    margin: 0 17px 0 27px;
-    border-radius: 8px;
-    background: gray;
-    opacity: .8;
+    height: 3.333333rem;
+    margin: 0 0.314815rem 0 0.5rem;
+    border-radius: 0.148148rem;
+    background: rgba(0,0,0,.2);
 }
 .btn_grounp{
-    padding: 25px 0 0 59px;
+    padding: 0.462963rem 0 0 1.092593rem;
 }
 .btn_bottom_download{
     display: block;
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
-    line-height: 49px;
-    width: 256px;
-    height: 49px;
+    font-size: 0.37037rem;
+    line-height: 0.907407rem;
+    width: 4.740741rem;
+    height: 0.907407rem;
     border: 1px solid #fff;
-    border-radius: 200px;
-    margin-bottom: 20px;
+    border-radius: 3.703704rem;
+    margin-bottom: 0.37037rem;
 }
 .btn_bottom_download .icon{
     position: relative;
-    top: 7px;
+    top: 0.12963rem;
     display: inline-block;
-    width: 30px;
-    height: 36px;
+    width: 0.555556rem;
+    height: 0.666667rem;
 }
 .btn_bottom_download .ios_icon{
     background: url(../images/xl_icon.png) no-repeat 0 -10px;
@@ -240,30 +248,30 @@ header{
 }
 .btn_bottom_download .text{
     position: relative;
-    top: -3px;
+    top: -0.055556rem;
 }
 .bottom_erweima{
     position: absolute;
-    top: 17px;
-    right: 55px;
+    top: 0.314815rem;
+    right: 1.018519rem;
     font-size: 0;
 }
 .erweima_img{
     display: inline-block;
-    padding: 9px;
-    border-radius: 8px;
+    padding: 0.166667rem;
+    border-radius: 0.148148rem;
     background: #fff;
-    margin-right: 16px;
+    margin-right: 0.296296rem;
 }
 .erweima_img img{
-    width: 126px;
-    height: 126px;
+    width: 2.333333rem;
+    height: 2.333333rem;
     display: block;
 }
 .bottom_erweima>p{
     display: inline-block;
     width: 1em;
-    font-size: 12px;
+    font-size: 0.222222rem;
     line-height: 1.15;
     position: relative;
     top: -9px;
@@ -274,9 +282,9 @@ header{
     height: 1em;
 }
 footer{
-    padding: 24px 0;
+    padding: 0.444444rem 0;
     text-align: center;
-    line-height: 24px;
-    font-size: 18px;
+    line-height: 0.444444rem;
+    font-size: 0.333333rem;
     color: #999;
 }

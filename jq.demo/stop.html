@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script> 
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: #300;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <button id="btn1">star</button>
+    <button id="btn2">stop</button>
+    <script>
+        $('#btn1').click(function(){
+            $('div').animate({width:'400px'},10000);
+        });
+        $('#btn2').click(function(){
+            $('div').stop(true,true);
+        });
+    </script>
+</body>
+</html>

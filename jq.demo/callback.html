@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script> 
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background: #339;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <button>按钮</button>
+    <script>
+        $('button').click(function(){
+            $('div').hide(2000,function(){
+                alert('我是前端开发工程师');
+            });
+        });
+    </script>
+</body>
+</html>
