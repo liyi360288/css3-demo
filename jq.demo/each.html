@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script> 
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            overflow: hidden;
+        }
+        li{
+            width: 200px;
+            list-style: none;
+            float: left;
+        }
+        .box>div{
+            display: none;
+        }
+        .box>div:first-child{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- <ul>
+        <li>
+            <a href="#">1</a>
+        </li>
+        <li>
+            <a href="#">2</a>
+        </li>
+        <li>
+            <a href="#">3</a>
+        </li>
+    </ul>
+    <div class="box">
+        <div style="background:#f00;height:100px;"></div>
+        <div style="background:#0f0;height:100px;"></div>
+        <div style="background:#00f;height:100px;"></div> 
+    </div> -->
+
+    <h1>javascript is very funny</h1>
+    <h1>javascript is very funny</h1>
+    <h1>javascript is very funny</h1>
+    <h1>javascript is very funny</h1>
+    <h1>javascript is very funny</h1>
+    <h1>javascript is very funny</h1>
+    <h1>javascript is very funny</h1>
+    <h1>javascript is very funny</h1>
+    <script>
+        /* $('li').mouseenter(function(){
+            //idx=$(this).index();
+            $('.box>div').hide();
+            $('.box>div').eq($(this).index()).show();
+        }); */
+        $('h1').each(function(i){
+            $(this).data({'num':i+1});
+        });
+        $('h1').click(function(){
+            $(this).html($(this).data('num'));
+        });
+    </script>
+</body>
+</html>

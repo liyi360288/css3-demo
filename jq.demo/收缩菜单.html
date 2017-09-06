@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>   
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .menu a{
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: #0f0;
+            color: #f00;
+        }
+        .menu li{
+            list-style: none;
+            display: inline-block;
+            
+        }
+        .menu .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li>
+            <a href="#">1</a>
+        </li>
+        <li>
+            <a href="#">2</a>
+        </li>
+        <li>
+            <a href="#">3</a>
+        </li>
+        <li>
+            <a href="#">4</a>
+        </li>
+        <li>
+            <a href="#">5</a>
+        </li>
+        <li>
+            <a href="#">6</a>
+        </li>
+        <li>
+            <a href="#">7</a>
+        </li>
+        <li>
+            <a href="#">8</a>
+        </li>
+        <li>
+            <a href="#">9</a>
+        </li>
+        <li>
+            <a href="#">10</a>
+        </li>
+        <li>
+            <a href="#" class="hide">显示全部</a>
+            <a href="#">收缩</a>
+        </li>
+    </ul>
+    <script>
+        $('.menu li:last a').click(function(){
+            $(this).addClass('hide').siblings().removeClass('hide');
+            if($(this).text().match('收缩'))
+                {
+                    $('.menu li:gt(4):not(:last)').hide();
+                }
+            else{
+                    $('.menu li:gt(4):not(:last)').show();
+            }
+            return false;  
+        });
+    </script>
+</body>
+</html>

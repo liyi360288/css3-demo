@@ -14,7 +14,7 @@ header{
     display: inline-block;
     width: 100%;
     height: 1.222222rem;
-    background: url(../images/icon.png) no-repeat 0 0;
+    background: url(../images/top_logo.png) no-repeat;
     margin: 0.444444rem 0 0.259259rem 0.888889rem;
 }
 .btn{
@@ -36,7 +36,6 @@ header{
     width: 0.666667rem;
     height: 0.055556rem;
     background: #fff;
-
 }
 .btn .icon::after,.btn .icon::before{
     position: absolute;
@@ -59,15 +58,6 @@ header{
     text-align: center;
     color: #fff;
 }
-/*.download_box::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.3);
-}*/
 .download_box .p_lead{
     font-size: 1.246111rem;
     font-weight: bold;
@@ -102,23 +92,25 @@ header{
     border: 3px solid #fff;
     border-radius: 1.851852rem;
     font-size: 0.66963rem;
-    text-decoration: none;
     color: #fff;
     line-height: 1.611111rem;
     margin-bottom: 0.851852rem;
+}
+.btn_download:hover,.btn_bottom_download:hover{
+    text-decoration: none;
 }
 .btn_download .icon{
     position: relative;
     display: inline-block;
     width: 1.0rem;
     height: 1.148148rem;
-    top: 0.240741rem;
+    top: 0.166667rem;
 }
 .ios_icon{
-    background: url(../images/icon.png) no-repeat 0 -85px;
+    background: url(../images/icon.png) no-repeat 0 -147px;
 }
 .andorid_icon{
-    background: url(../images/icon.png) no-repeat 0 -200px;
+    background: url(../images/icon.png) no-repeat 0 -265px;
 }
 .btn_download .text{
     position: relative;
@@ -142,9 +134,6 @@ header{
 .photo_1{
     background: url(../images/zhiNengDuiXiang.png) no-repeat center;
     height: 8.240741rem;
-}
-.margin_top_703px{
-    margin-top: 13.018519rem;
 }
 .text_box{
     font-size: 0.444444rem;
@@ -170,9 +159,6 @@ header{
     height: 5.851852rem;
     margin-top: 1.611111rem;
 }
-.margin_bottom_126px{
-    margin-bottom: 2.333333rem;
-}
 .photo_3{
     margin-top: 1.907407rem;
     background: url(../images/zhiNengDuiXiang3.png) no-repeat center;
@@ -183,21 +169,11 @@ header{
     background: url(../images/zhiNengDuiXiang4.png) no-repeat center;
     height: 7.462963rem;
 }
-.cooperator_item{
-    display: inline-block;
+.cooperator_box{
+    background: url(../images/hezuo_logo.png) no-repeat ;
+    width: 10.37037rem;
     height: 1.37037rem;
-}
-.cooperator_bg1{
-    width: 3.703704rem;
-    background: url(../images/icon.png) no-repeat 0 -300px;
-}
-.cooperator_bg2{
-    width: 3.240741rem;
-    background: url(../images/icon.png) no-repeat 0 -446px;
-}
-.cooperator_bg3{
-    width: 3.240741rem;
-    background: url(../images/icon.png) no-repeat 0 -585px;
+    margin: 0 auto ;
 }
 .bottom_box{
     text-align: center;
@@ -241,10 +217,10 @@ header{
     height: 0.666667rem;
 }
 .btn_bottom_download .ios_icon{
-    background: url(../images/xl_icon.png) no-repeat 0 -10px;
+    background: url(../images/icon.png) no-repeat 0 -14px;
 }
 .btn_bottom_download .andorid_icon{
-    background: url(../images/xl_icon.png) no-repeat 0 -67px;
+    background: url(../images/icon.png) no-repeat 0 -65px;
 }
 .btn_bottom_download .text{
     position: relative;
@@ -287,4 +263,10 @@ footer{
     line-height: 0.444444rem;
     font-size: 0.333333rem;
     color: #999;
+}
+.margin_bottom_126px{
+    margin-bottom: 2.333333rem;
+}
+.margin_top_703px{
+    margin-top: 13.018519rem;
 }
