@@ -4,17 +4,20 @@
     padding: 0;
 }
 .container{
-    width: 760px;
+    width: 10rem;
+    margin: 0 auto;
 }
 header{
+    text-align: left;
     background: rgba(255,255,255,.05);
     font-size: 0;
 }
 .top_logo{
     display: inline-block;
-    width: 100%;
+    width: 5.092593rem;
     height: 1.222222rem;
     background: url(../images/top_logo.png) no-repeat;
+    background-size: 100% 100%;
     margin: 0.444444rem 0 0.259259rem 0.888889rem;
 }
 .btn{
@@ -34,7 +37,7 @@ header{
     margin-top: -0.027778rem;
     display: inline-block;
     width: 0.666667rem;
-    height: 0.055556rem;
+    height: 3px;
     background: #fff;
 }
 .btn .icon::after,.btn .icon::before{
@@ -42,7 +45,7 @@ header{
     left: 0;
     content: '';
     width: 100%;
-    height: 0.055556rem;
+    height: 3px;
     background: #fff;
 }
 .btn .icon::after{
@@ -54,18 +57,19 @@ header{
 .download_box{
     position: relative;
     background: url(../images/background.png) no-repeat rgba(0,0,0,.3);
+    background-size: 100% 100%;
     height: 29.907407rem;
     text-align: center;
     color: #fff;
 }
 .download_box .p_lead{
-    font-size: 1.246111rem;
+    font-size: .925926rem;
     font-weight: bold;
     padding-top: 1.518519rem;
     padding-bottom: 0.5rem; 
 }
 .download_box>p{
-    font-size: 0.830741rem;
+    font-size: 25px;
     line-height: 1.111111rem;
     font-weight: 300;
 }
@@ -87,8 +91,8 @@ header{
 .btn_download{
     display: block;
     margin: 0 auto;
-    width: 8.518519rem;
-    height: 1.611111rem;
+    width: 8.333333rem;
+    height: 1.666667rem;
     border: 3px solid #fff;
     border-radius: 1.851852rem;
     font-size: 0.66963rem;
@@ -107,10 +111,12 @@ header{
     top: 0.166667rem;
 }
 .ios_icon{
-    background: url(../images/icon.png) no-repeat 0 -147px;
+    background: url(../images/iphon.png) no-repeat ;
+    background-size: 100% 100%;    
 }
 .andorid_icon{
-    background: url(../images/icon.png) no-repeat 0 -265px;
+    background: url(../images/andro.png) no-repeat ;
+    background-size: 100% 100%;    
 }
 .btn_download .text{
     position: relative;
@@ -118,11 +124,12 @@ header{
 }
 .ip_iocn{
     position: absolute;
-    top: 19.333333rem;
-    width: 14.055556rem;
+    bottom: -13.240741rem;
+    width: 100%;
     height: 22.222222rem;
     z-index: 100;
     background: url(../images/ip_iocn.png) no-repeat;
+    background-size: 100% 100%;
 }
 .zhiNengDuiXiang_box{
     text-align: center;
@@ -133,6 +140,7 @@ header{
 }
 .photo_1{
     background: url(../images/zhiNengDuiXiang.png) no-repeat center;
+    background-size: 100% 100%;
     height: 8.240741rem;
 }
 .text_box{
@@ -156,21 +164,25 @@ header{
 }
 .photo_2{
     background: url(../images/zhiNengDuiXiang2.png) no-repeat center;
+    background-size: 100% 100%;
     height: 5.851852rem;
     margin-top: 1.611111rem;
 }
 .photo_3{
     margin-top: 1.907407rem;
     background: url(../images/zhiNengDuiXiang3.png) no-repeat center;
+    background-size: 100% 100%;
     height: 10.0rem;
 }
 .photo_4{
     margin-top: 1.259259rem;
     background: url(../images/zhiNengDuiXiang4.png) no-repeat center;
+    background-size: 100% 100%;
     height: 7.462963rem;
 }
 .cooperator_box{
     background: url(../images/hezuo_logo.png) no-repeat ;
+    background-size: 100% 100%;
     width: 10.37037rem;
     height: 1.37037rem;
     margin: 0 auto ;
@@ -179,6 +191,7 @@ header{
     text-align: center;
     height: 6.722222rem;
     background: url(../images/bg_bottom.jpg) no-repeat center;
+    background-size: 100% 100%;
     color: #fff;
 }
 .bottom_box>p{
@@ -190,12 +203,12 @@ header{
 .download_bottom_box{
     position: relative;
     height: 3.333333rem;
-    margin: 0 0.314815rem 0 0.5rem;
+    margin: 0 0.314815rem ;
     border-radius: 0.148148rem;
     background: rgba(0,0,0,.2);
 }
 .btn_grounp{
-    padding: 0.462963rem 0 0 1.092593rem;
+    padding: 0.462963rem 0 0 0.296296rem;
 }
 .btn_bottom_download{
     display: block;
@@ -217,10 +230,12 @@ header{
     height: 0.666667rem;
 }
 .btn_bottom_download .ios_icon{
-    background: url(../images/icon.png) no-repeat 0 -14px;
+    background: url(../images/iphon.png) no-repeat ;
+    background-size: 100% 100%;
 }
 .btn_bottom_download .andorid_icon{
-    background: url(../images/icon.png) no-repeat 0 -65px;
+    background: url(../images/andro.png) no-repeat ;
+    background-size: 100% 100%;    
 }
 .btn_bottom_download .text{
     position: relative;
@@ -229,11 +244,12 @@ header{
 .bottom_erweima{
     position: absolute;
     top: 0.314815rem;
-    right: 1.018519rem;
+    right: 0;
     font-size: 0;
 }
 .erweima_img{
     display: inline-block;
+    vertical-align: top;
     padding: 0.166667rem;
     border-radius: 0.148148rem;
     background: #fff;
